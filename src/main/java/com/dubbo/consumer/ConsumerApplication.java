@@ -9,7 +9,7 @@ public class ConsumerApplication {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[]{"classpath:dubbo-consumer.xml"});
         context.start();
-        // obtain proxy object for remote invocation   test
+        // obtain proxy object for remote invocation 
         DemoService demoService = (DemoService) context.getBean("demoService");
         // execute remote invocation
         int i = 0;
