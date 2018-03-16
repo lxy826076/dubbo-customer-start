@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.alibaba.dubbo.provider.DemoService;
 
-public class ConsumerApplication {//test bth
+public class ConsumerApplication {
     public static void main(String[] args) throws Exception {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[]{"classpath:dubbo-consumer.xml"});
